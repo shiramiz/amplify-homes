@@ -1,6 +1,14 @@
+type Test @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  imgUrl: String
+  price: String
+}
+
 type Home @model @auth(rules: [{allow: public}]) {
   id: ID!
   address: String
   image_url: String
   price: Float
 }
+ 
